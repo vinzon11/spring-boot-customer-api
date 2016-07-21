@@ -6,37 +6,31 @@ CRUD customer api using spring boot
 - Run the application and
 - Use the following urls to invoke rest controller methods and see the interactions
   with the hsqldb:
+    
+    Create Customer:
+        POST http:localhost/exam/v1/customers
+        {
+          "name": "SM Robinson",
+          "address": "Shaw Mandaluyong",
+          "telephone": "6411111"
+        }
+    
+    Get ALL Customers:
+        GET http:localhost/exam/v1/customers
 
-    $ mvn spring-boot:run
+    Get One Customer:
+        GET http:localhost/exam/v1/customers/{Id}
     
-    or
+    Update Customer:
+        PUT http:localhost/exam/v1/customers/{Id}
+        {
+          "name": "SM Robinson",
+          "address": "Cubao QC",
+          "telephone": "6411111"
+        }
     
-    $ java -jar target/customer-api-1.0.0-SNAPSHOT.jar --server.port=<yourchoiceofport>
-    
-Create Customer:
-    POST http:localhost/exam/v1/customers
-    {
-      "name": "SM Robinson",
-      "address": "Shaw Mandaluyong",
-      "telephone": "6411111"
-    }
-    
-Get ALL Customers:
-GET http:localhost/exam/v1/customers
-
-Get One Customer:
-GET http:localhost/exam/v1/customers/{Id}
-    
-Update Customer:
-    PUT http:localhost/exam/v1/customers/{Id}
-    {
-      "name": "SM Robinson",
-      "address": "Cubao QC",
-      "telephone": "6411111"
-    }
-    
-Delete Customer:
-DELETE http:localhost/exam/v1/customers/{Id}
+    Delete Customer:
+        DELETE http:localhost/exam/v1/customers/{Id}
 
 ### Build and run
 
