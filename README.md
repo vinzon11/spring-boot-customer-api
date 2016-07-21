@@ -3,7 +3,7 @@ CRUD customer api using spring boot
 
 ## Usage
 
-- Run the application and go on http://localhost:<port>/exam/v1
+- Run the application and
 - Use the following urls to invoke rest controller methods and see the interactions
   with the hsqldb:
 
