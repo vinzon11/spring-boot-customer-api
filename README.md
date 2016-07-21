@@ -7,6 +7,12 @@ CRUD customer api using spring boot
 - Use the following urls to invoke rest controller methods and see the interactions
   with the hsqldb:
 
+    $ mvn spring-boot:run
+    
+    or
+    
+    $ java -jar target/customer-api-1.0.0-SNAPSHOT.jar --server.port=<yourchoiceofport>
+    
 Create Customer:
     POST http:localhost/exam/v1/customers
     {
