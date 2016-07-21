@@ -6,7 +6,7 @@ CRUD customer api using spring boot
 - Run the application and
 - Use the following urls to invoke rest controller methods and see the interactions
   with the hsqldb:
-    
+  ``` 
     Create Customer:
         POST http:localhost/exam/v1/customers
         {
@@ -31,7 +31,7 @@ CRUD customer api using spring boot
     
     Delete Customer:
         DELETE http:localhost/exam/v1/customers/{Id}
-
+  ```
 ### Build and run
 
 #### Prerequisites
