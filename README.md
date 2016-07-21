@@ -32,6 +32,7 @@ CRUD customer api using spring boot
     Delete Customer:
         DELETE http:localhost/exam/v1/customers/{Id}
   ```
+
 ### Build and run
 
 #### Prerequisites
